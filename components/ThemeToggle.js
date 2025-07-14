@@ -32,7 +32,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="fixed top-4 right-4 p-2 bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg transition-colors z-50"
+      className="fixed top-20 right-4 md:top-4 p-2 bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg transition-colors z-50"
       aria-label="Toggle theme"
     >
       {theme === 'light' ? '🌙' : '☀️'}
