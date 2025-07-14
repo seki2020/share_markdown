@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { copyToClipboard } from '../lib/utils'
+import QRCodeDisplay from './QRCodeDisplay'
 
 export default function UploadResults({ results, onReset }) {
   const [copiedIndex, setCopiedIndex] = useState(null)
@@ -97,6 +98,7 @@ export default function UploadResults({ results, onReset }) {
                       >
                         View
                       </a>
+                      <QRCodeDisplay url={result.shareUrl} />
                     </div>
                   </div>
                 </div>
